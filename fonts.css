@@ -1,20 +1,20 @@
 @font-face {
-	font-family: 'Gothampro-bold';
-	src: url('fonts/gothampro-bold.woff') format('woff');
+	font-family: GothamProBold;
+	src: url('fonts/GothamProBold.woff') format('woff');
 
 }
 
 @font-face {
-	font-family: 'Gothampro-italic';
-	src: url('fonts/gothampro-italic.woff') format('woff');
+	font-family: GothamProLight;
+	src: url('fonts/GothamProLight.woff') format('woff');
 }
 
 @font-face {
-	font-family: 'Gothampro-light';
-	src: url('fonts/gothampro-light.woff') format('woff');
+	font-family: GothamProItalic;
+	src: url('fonts/GothamProItalic.woff') format('woff');
 }
 
 @font-face {
-	font-family: 'Gothampro-medium';
-	src: url('fonts/gothampro-medium.woff') format('woff');
+	font-family: GothamProRegular;
+	src: url('fonts/GothamProRegular.woff') format('woff');
 }
