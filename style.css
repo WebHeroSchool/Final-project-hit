@@ -1,1 +1,34 @@
+.wrapper {
+	font-family: GothamProRegular, Helvetica;
+	margin: 0 auto;
+	width: 88%;
+}
 
+.header__logo {
+	background-image: url(image/logo.png);
+	width: 55px;
+	height: 55px;
+}
+
+.header__language {
+	width: 20px;
+	height: 20px;
+	background-image: url(image/flag.svg);
+}	
+
+.infoblock {
+	background-image: url(image/man.jpg);
+	height: 280px;
+}
+
+.infoblock__video {
+	background-image: url(image/video.jpg);
+	width: 628px;
+	height: 345px;	
+}
+
+.footer {
+	background: #000;
+	font-family: GothamProRegular, Helvetica;
+	color: #fff;
+}
