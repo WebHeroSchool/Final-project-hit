@@ -1,24 +1,125 @@
+body {
+	margin: 0;
+}
+
 .wrapper {
 	font-family: GothamProRegular, Helvetica;
 	margin: 0 auto;
 	width: 88%;
 }
 
+.header {
+	padding-top: 33px;
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 28px;
+}
+
+.header-navbar, .header-actions {
+	display: flex;
+	align-items: center;
+}
+
+.header__menu {
+	position: relative;
+}
+
+.menu__item {
+	text-decoration: none;
+	text-transform: uppercase;
+	margin-right: 35px;
+	color: #000;
+	font: bold 13px/12px GothamProBold, Helvetica;
+}
+
 .header__logo {
 	background-image: url(image/logo.png);
 	width: 55px;
 	height: 55px;
+	margin-right: 45px;
+}
+
+.search {
+	outline: none;
+	border: none;
+	width: 178px;
+	border-bottom: 2px solid #000;
+}
+
+.search::after {
+	content: '\f002';
+	color: black;
+	font-family: FontAwesome;
+}
+
+.header-actions > .header__menu > .menu__item:last-child::after {
+	content: "1";
+	width: 14px;
+	height: 14px;
+	color: white;
+	position: absolute;
+	right: 18px;
+	top: 3px;
+	text-align: center;
+	display: inline-block;
+	background-color: #000;
+	border-radius: 50%;
 }
 
 .header__language {
 	width: 20px;
 	height: 20px;
 	background-image: url(image/flag.svg);
-}	
+}
+
+.hamburger-menu {
+	display: none;
+}
 
 .infoblock {
 	background-image: url(image/man.jpg);
 	height: 280px;
+	margin-bottom: 53px;
+}
+
+.infoblock__title {
+	width: 19%;
+	padding: 90px 0 0 60px;
+	margin: 0 0 14px 0;
+	color: #fff;
+	text-transform: uppercase;
+	font: bold 30px/28px GothamProBold, Helvetica;
+}
+
+.infoblock__subtitle {
+	padding-left: 60px;
+	text-decoration: none;
+	color: #fff;
+	text-transform: uppercase;
+	font: bold 12px/11.5px GothamProBold, Helvetica;
+}
+
+.products__title {
+	text-align: center;
+	text-transform: uppercase;
+	font: bold 22px/21px GothamProBold, Helvetica;
+}
+
+.products {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 26px;
+}
+
+.product {
+	border: 1px solid red;
+}
+
+.line {
+	width: 2px;
+	height: 100px;
+	background-color: #9c9c9c;	
 }
 
 .infoblock__video {
