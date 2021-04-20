@@ -44,12 +44,15 @@ body {
 	border: none;
 	width: 178px;
 	border-bottom: 2px solid #000;
+	position: relative;
 }
 
 .search::after {
-	content: '\f002';
-	color: black;
-	font-family: FontAwesome;
+	content: "";
+	width: 13.5px;
+	height: 14px;
+	position: absolute;
+	background-image: url(image/seach.svg);
 }
 
 .header-actions > .header__menu > .menu__item:last-child::after {
