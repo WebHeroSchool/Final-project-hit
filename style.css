@@ -18,6 +18,7 @@ body {
 .header-navbar, .header-actions {
 	display: flex;
 	align-items: center;
+	position: relative;
 }
 
 .header__menu {
@@ -45,13 +46,15 @@ body {
 	width: 178px;
 	border-bottom: 2px solid #000;
 	position: relative;
+	margin-right: 36px;
 }
 
-.search::after {
+.header-actions::after {
 	content: "";
 	width: 13.5px;
 	height: 14px;
 	position: absolute;
+	left: 169px;
 	background-image: url(image/seach.svg);
 }
 
@@ -83,11 +86,12 @@ body {
 	background-image: url(image/man.jpg);
 	height: 280px;
 	margin-bottom: 53px;
+	padding-left: 60px;
 }
 
 .infoblock__title {
 	width: 19%;
-	padding: 90px 0 0 60px;
+	padding: 90px 0 0 0;
 	margin: 0 0 14px 0;
 	color: #fff;
 	text-transform: uppercase;
@@ -95,44 +99,159 @@ body {
 }
 
 .infoblock__subtitle {
-	padding-left: 60px;
 	text-decoration: none;
 	color: #fff;
+	position: relative;
 	text-transform: uppercase;
 	font: bold 12px/11.5px GothamProBold, Helvetica;
 }
 
-.products__title {
+.infoblock__subtitle::after {
+	content: "";
+	width: 45px;
+	height: 8px;
+	position: absolute;
+	top: 2px;
+	left: 75px;
+	background-image: url(image/Arrow.svg);
+}
+
+.products__title, .news__title {
 	text-align: center;
 	text-transform: uppercase;
 	font: bold 22px/21px GothamProBold, Helvetica;
+	margin: 0 0 15px 0;
 }
 
 .products {
 	display: flex;
 	justify-content: space-between;
-	align-items: center;
+	align-items: flex-start;
 	margin-bottom: 26px;
 }
 
 .product {
-	border: 1px solid red;
+	padding: 0 12px;
+}
+
+.product__boots {
+	padding: 0 7px 0 11px;
+	margin-bottom: 24px;
+}
+
+.product__name {
+	font: normal 12px/11.5px GothamProRegular, Helvetica;
+	margin: 0 0 10px 0;	
+}
+
+.product__price-color {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 0 0 20px 0;
+}
+
+.product__price {
+	font: bold 14px/13px GothamProBold, Helvetica;
+	margin: 0;
 }
 
 .line {
-	width: 2px;
+	width: 1px;
 	height: 100px;
-	background-color: #9c9c9c;	
+	background-color: #9c9c9c;
+	margin-top: 30px;	
+}
+
+.colors {
+	display: flex;
+}
+
+.product__color {
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background-color: #c4c4c4;
+	margin-right: 3px;
+}
+
+.product__color:hover {
+transform: scale(1.2, 1.2)
+}
+
+.yellow {
+	background-color: #fdb431;	
+}
+
+.purple {
+	background-color: #b62e3c;
+}
+
+.blue {
+	background-color: #257da9;
+}
+
+.darkblue {
+	background-color: #41479b;
+}
+
+.darkred {
+	background-color: #762e31;
+}
+
+.darkgrey {
+	background-color: #0e1211;
+}
+.corporeal {
+	background-color: #e29d69;
+}
+
+.infoblock_black {
+	box-sizing: border-box;
+	background-color: #000;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 500px;
+	padding: 75px 41px;
+	margin-bottom: 80px;
 }
 
 .infoblock__video {
-	background-image: url(image/video.jpg);
-	width: 628px;
-	height: 345px;	
+	width: 62%;
+	margin-right: 50px;
 }
+
+.article {
+	width: 29%;
+}
+
+.article__title {
+	color: #fff;
+	text-transform: uppercase;
+	font: bold 22px/27px GothamProBold, Helvetica;
+	margin: 0;
+}
+
+.article__descriplion {
+	color: #fff;
+	font: normal 14px/17px GothamProRegular, Helvetica;
+}
+
+
+.article > .infoblock__subtitle::after {
+	left: 85px;
+}
+
+.black {
+	color: #000;
+}
+
+
 
 .footer {
 	background: #000;
 	font-family: GothamProRegular, Helvetica;
 	color: #fff;
 }
+
