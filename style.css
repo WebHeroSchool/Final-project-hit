@@ -59,7 +59,7 @@ body {
 }
 
 .header-actions > .header__menu > .menu__item:last-child {
-margin-right: 55px;
+	margin-right: 55px;
 }
 
 .header-actions > .header__menu > .menu__item:last-child::after {
@@ -280,15 +280,15 @@ transform: scale(1.2, 1.2)
 
 .news__story__title {
 	font: bold 18px/17px GothamProBold, Helvetica;
-	margin: 0 0 8px 0;
+	margin: 0 0 10px 0;
 }
 
 .news__story > .article__descriplion {
 	margin: 0 0 16px 0;
 }
 
-.news__story > .infoblock__subtitle::after {
-	background-image: url(image/Ar.svg);
+.news__story > .news__story__footer > .infoblock__subtitle::after {
+	background-image: url(image/Arrowblack.svg);
 	width: 30px;
 	left: 90px;
 }
@@ -312,19 +312,87 @@ transform: scale(1.2, 1.2)
 }
 
 .photo-collage {
-	margin-right: 0;
+	margin: 0;
 	display: flex;
+/*	flex-wrap: wrap;*/
 	align-items: stretch;
+	margin-bottom: 80px;
 }
 
 .photo-collage__image {
-
+	display: inline;
+	font-size: 0;
 }
 
 .footer {
+	display: flex;
+	justify-content: center;
 	background: #000;
-	font-family: GothamProRegular, Helvetica;
+	font: normal 12px/11px GothamProRegular, Helvetica;
 	color: #fff;
+	padding-top: 57px;
+	padding-bottom: 57px;
+}
+
+.footer__menu {
+	display: flex;
+	flex-direction: column;
+}
+
+.footer__menu:first-child {
+	margin-right: 115px;
+}
+
+.footer__menu:nth-child(2) {
+	margin-right: 73px;
+}
+
+.footer__menu:nth-child(3) {
+	margin-right: 85px;
+}
+
+.footer__menu_name {
+	font-weight: bold;
+}
+
+.footer__menu__item {
+	color: #fff;
+	text-decoration: none;
+	padding-bottom: 7px;
+}
+
+.footer__menu:last-child > .footer__menu_name {
+	margin-bottom: 8px;
+}
+
+.sale {
+	display: block;
+	text-decoration: none;
+	color: #fff;
+	margin-bottom: 12px;
+}
+
+.contacts-btn {
+	width: 136px;
+	height: 30px;
+	border: 2px solid #fff;
+	background-color: transparent;
+	font: normal 12px/11px GothamProRegular, Helvetica;
+	color: #fff;
+	padding-left: 10px;
+	margin-bottom: 32px;
+}
+
+.contacts__social-networking__item {
+	margin-right: 23px;
+}
+
+.footer-center {
+	background-color: #000;
+	text-align: center;
+	font: normal 12px/11px GothamProRegular, Helvetica;
+	color: #fff;
+	margin: 0;
 }
 
 @media(max-width: 1024px) {
@@ -438,16 +506,24 @@ transform: scale(1.2, 1.2)
 	}
 
 	.news__story > .article__descriplion {
-    margin: 0 0 19px 0;
+    margin: 0 0 20px 0;
 	}
 
 	.news__story {
     margin-bottom: 30px;
+  }
+
+	.news__story__title {
+		margin: 0 0 8px 0;
+	}
+
+	.photo-collage {
+		margin-bottom: 92px;
+	}
+
+	.photo-collage__photo {
+		width: 133px;
+		height: 133px;
+	}
 
 }
-
-
-
-
-}
-
