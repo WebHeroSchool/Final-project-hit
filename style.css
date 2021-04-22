@@ -87,7 +87,7 @@ margin-right: 55px;
 }
 
 .infoblock {
-	background-image: url(image/man.jpg);
+	background: no-repeat url(image/man.jpg);
 	height: 280px;
 	margin-bottom: 53px;
 	padding-left: 60px;
@@ -144,8 +144,8 @@ margin-right: 55px;
 }
 
 .product__name {
-	font: normal 12px/11px GothamProRegular, Helvetica;
-	margin: 0 0 9px 0;	
+	font: normal 11px/11px GothamProRegular, Helvetica;
+	margin: 0 0 7px 0;	
 }
 
 .product__price-color {
@@ -325,5 +325,129 @@ transform: scale(1.2, 1.2)
 	background: #000;
 	font-family: GothamProRegular, Helvetica;
 	color: #fff;
+}
+
+@media(max-width: 1024px) {
+	.wrapper {
+		width: 91%;
+	}
+
+	.header {
+		margin-bottom: 41px
+	}
+
+	.header__logo {
+	margin-right: 37px;
+	}
+
+	.header-actions > .header__menu > .menu__item:last-child {
+		margin-right: 43px;
+	}
+
+	.header-actions > .header__menu > .menu__item:last-child::after {
+		right: 26px;
+	}
+
+	.search {
+		width: 154px;
+		margin-right: 31px;
+	}
+	
+	.header-actions::after {
+		left: 146px;
+	}
+
+	.header-actions > .header__menu > .menu__item:first-child {
+		margin-right: 25px;
+	}
+
+	.infoblock {
+		padding-left: 55px;
+		height: 268px;
+		background-size: contain;
+	}
+
+	.infoblock__title {
+		padding: 78px 0 0 0;
+		margin-bottom: 8px;
+	}
+
+	.infoblock__subtitle::after {
+	  top: 3px;
+    left: 85px;
+	}
+
+	.product__boots {
+		width: 86%;
+		padding-right: 0;
+		margin-bottom: 35px;
+	}
+
+	.product {
+		padding-right: 0;
+	}
+
+	.products__title {
+		margin: 0 0 22px 0;
+	}
+
+	.product__price-color {
+		margin-right: 10px;
+	}
+
+	.products {
+		margin-bottom: 59px;
+	}
+
+	.infoblock_black {
+		height: 444px;
+		padding: 66px 33px;
+		margin-bottom: 92px;
+	}
+
+	.infoblock__video {
+    width: 66.5%;
+    margin-right: 40px;
+	}
+
+	.article {
+    width: 29%;
+    padding-right: 0;
+	}
+
+	.article__descriplion {
+    font: normal 13px/17px GothamProRegular, Helvetica;
+    margin: 7px 0 11px 0;
+	}
+
+	.article > .infoblock__subtitle::after {
+		left: 99px;
+		top: 2px;
+	}
+
+	.news__story {
+    margin-right: 49px;
+	}
+
+	.news__title {
+    margin-bottom: 43px;
+	}
+
+	.news__story__foto {
+		height: 37%;
+	}
+
+	.news__story > .article__descriplion {
+    margin: 0 0 19px 0;
+	}
+
+	.news__story {
+    margin-bottom: 30px;
+
+}
+
+
+
+
 }
 
