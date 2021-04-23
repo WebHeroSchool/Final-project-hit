@@ -34,7 +34,8 @@ body {
 }
 
 .header__logo {
-	background-image: url(image/logo.png);
+	background: no-repeat url(image/logo.png);
+/*	background-size: auto;*/
 	width: 55px;
 	height: 55px;
 	margin-right: 45px;
@@ -79,7 +80,7 @@ body {
 .header__language {
 	width: 20px;
 	height: 20px;
-	background-image: url(image/flag.svg);
+	background: no-repeat url(image/flag.svg);
 }
 
 .hamburger-menu {
@@ -314,7 +315,7 @@ transform: scale(1.2, 1.2)
 .photo-collage {
 	margin: 0;
 	display: flex;
-/*	flex-wrap: wrap;*/
+	flex-wrap: wrap;
 	align-items: stretch;
 	margin-bottom: 80px;
 }
@@ -525,5 +526,183 @@ transform: scale(1.2, 1.2)
 		width: 133px;
 		height: 133px;
 	}
+}
+
+@media(max-width: 768px) {
+
+	.wrapper {
+		width: 100%;
+	}
+
+	.header__logo {
+		background: no-repeat url(image/Axion.svg);
+		background-size: cover;
+		margin: 9px 0 0 43px;
+		width: 157px;
+		height: 33px;
+	}
+
+	.header {
+    margin-bottom: 39px;
+  }
+
+	.hamburger-menu {
+		display: block;
+	}
+
+	#menu__toggle {
+ 	 opacity: 0;
+	}
+
+	.menu__btn {
+  	display: flex;
+  	align-items: center;
+  	position: fixed;
+    top: 43px;
+    right: 44px;
+    width: 61px;
+    height: 17px;
+ 	 	cursor: pointer;
+  	z-index: 2;
+}
+
+.menu__btn > span,
+.menu__btn > span::after {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 8px;
+  background-color: #000;
+  transition-duration: 0.25s;
+}
+
+.menu__btn > span::after {
+  content: '';
+  top: 15px;
+}
+
+.menu__box {
+  display: flex;
+  position: fixed;
+  top: 0;
+  visibility: hidden;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 176px 0;
+  list-style: none;
+  background-color: #fff;
+  transition-duration: 0.25s;
+}
+
+#menu__toggle:checked ~ .menu__btn > span {
+  transform: rotate(45deg);
+}
+
+#menu__toggle:checked ~ .menu__btn > span::after {
+  top: 0;
+  transform: rotate(90deg);
+}
+
+#menu__toggle:checked ~ .menu__box {
+  visibility: visible;
+  left: 0;
+  z-index: 1;
+}
+
+.menu__box__item {
+  display: block;
+  padding: 13px 24px;
+  color: #333;
+  font: 600 30px/34px 'Roboto', sans-serif;
+  text-decoration: none;
+  transition-duration: 0.25s;
+  margin-right: 4px;
+  letter-spacing: 0.1px;
+}
+
+	.menu__box__item:hover {
+  	background-color: #cfd8dc;
+	}
+
+	.menu__box li:last-child .menu__box__item {
+  	margin-right: 7px;
+	}
+
+	.menu__box li:nth-child(-n+2) .menu__box__item {
+  	margin-right: 3px;
+	}
+
+	.menu__box__item:hover {
+  	background-color: #cfd8dc;
+	}
+
+	.infoblock {
+		background-image: url(image/man-planshet.png);
+	  height: 415px;
+	  margin-bottom: 53px;
+	  padding-left: 46px;
+	  margin-bottom: 65px;
+	}
+
+	.infoblock__title {
+    font: bold 48px/49px GothamProBold, Helvetica;
+    padding: 119px 0 0 0;
+    letter-spacing: 1.5px;
+    margin-bottom: 47px;
+	}
+
+	.infoblock__subtitle {
+			font: bold 20px/19px GothamProBold, Helvetica;
+	}
+
+	.infoblock__subtitle::after {
+    top: 8px;
+    left: 127px;
+    background-size: cover;
+    width: 71px;
+    height: 12px;
+	}
+
+	.products__title {
+    font: bold 30px/28px GothamProBold, Helvetica;
+    padding-right: 14px;
+  }
+
+  .products {
+  	justify-content: center;
+  }
+  
+  .products > .product:last-child, .product:nth-child(3), .line, .header__menu, .header-actions {
+  	display: none;
+  }
+
+  .product__boots {
+  	width: 228px;
+		height: 233px;
+  }
+
+  .product:first-child {
+  	margin-right: 117px;
+  }
+
+  .product__name {
+    font: normal 20px/19px GothamProRegular, Helvetica;
+    margin: 0 0 7px 0;
+  }
+  
+  .product__price {
+    font: bold 25px/24px GothamProBold, Helvetica;
+	}
+
+	.product__color {
+		width: 20px;
+		height: 20px;
+	}
+
+
 
 }
