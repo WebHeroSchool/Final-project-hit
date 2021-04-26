@@ -872,9 +872,121 @@ transform: scale(1.2, 1.2)
 		padding-bottom: 37px;
 	}
 
-@media(max-width: 375px) {
+@media(max-width: 376px) {
 
-	  .product:nth-child(2) {
-	  	display: none;
-	  }
+	  
+
+
+	.header {
+    padding-top: 24px;
+    margin-bottom: 26px;
+  }
+
+
+	.header__logo {
+    margin: 0 0 0 47px;
+    width: 104px;
+    height: 22px;
+	}
+
+	.menu__btn > span::after {
+    top: 11px;
+	}
+
+	.menu__btn {
+    top: 28px;
+    right: 47px;
+    width: 41px;
+    height: 4px;
+	}
+
+	.menu__btn > span, .menu__btn > span::after {
+    height: 6px;
+  }
+
+	.products > .product:nth-child(3) {
+	 	display: none;
+	}
+
+  .footer {
+		flex-direction: column;
+		align-items: center;
+	/*padding-top: 57px;
+	padding-bottom: 57px;*/
+	}
+	.infoblock {
+    background-image: url(image/man-mobile.png);
+    height: 191px;
+    padding-left: 48px;
+    margin-bottom: 38px;
+	}
+
+	.infoblock__title {
+    font: bold 20px/19.4px GothamProBold, Helvetica;
+    padding: 65px 0 0 0;
+    margin-bottom: 13px;
+    letter-spacing: 0;
+	}
+
+	.infoblock__subtitle {
+    font: bold 12px/11.5px GothamProBold, Helvetica;
+}
+
+	.products__title {
+    font: bold 20px/19.14px GothamProBold, Helvetica;
+    padding-right: 11px;
+    margin-bottom: 0;
+  }
+
+
+
+.products {
+justify-content: center;
+	align-items: center;
+
+}
+	.product:first-child {
+    margin-right: 0;
+    padding-left: 4px;
+	}
+
+
+
+	.product__boots {
+    padding: 0 57px 0 47px;
+    margin-right: 0;
+		width: 50%;
+		height: auto;
+	}
+
+	.product__name {
+    font: normal 15px/14.37px GothamProRegular, Helvetica;
+  }
+
+  .product__price {
+    font: bold 20px/19.14px GothamProBold, Helvetica;
+}
+
+.product__color {
+    width: 15px;
+    height: 15px;
+    }
+
+	
+	.news__story:nth-child(2) {
+		display: none;
+	}
+
+	.news__story {
+    width: 80%;
+    margin-right: 0;
+  }
+
+	.footer__menu:first-child, .footer__menu:nth-child(2), .footer__menu:nth-child(3) {
+		margin: 0;
+		text-align: center;
+	}
+
+
+
 }
