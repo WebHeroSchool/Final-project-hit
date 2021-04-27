@@ -1189,14 +1189,9 @@ transform: scale(1.2, 1.2)
 
 	.infoblock {
     background-image: url(image/man-planshet.png);
-    height: 171px;
+    height: 150px;
     padding-left: 20px;
     margin-bottom: 38px;
 }
-
-}
-
-
-
 
 }
