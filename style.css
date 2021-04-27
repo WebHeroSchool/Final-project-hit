@@ -1175,6 +1175,27 @@ transform: scale(1.2, 1.2)
     font: normal 13px/11px GothamProRegular, Helvetica;
     padding-left: 3px;
 	}
+}
+
+@media(max-width: 320px) {
+
+	.header__logo {
+    margin-left: 20px;
+  }
+
+  .menu__btn {
+    right: 20px;
+	}
+
+	.infoblock {
+    background-image: url(image/man-planshet.png);
+    height: 171px;
+    padding-left: 20px;
+    margin-bottom: 38px;
+}
+
+}
+
 
 
 
