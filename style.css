@@ -90,6 +90,7 @@ body {
 .infoblock {
 	background: no-repeat url(image/man.jpg);
 	height: 280px;
+	background-size: 100% 100%;
 	margin-bottom: 53px;
 	padding-left: 60px;
 }
@@ -145,7 +146,7 @@ body {
 }
 
 .product__name {
-	font: normal 11px/11px GothamProRegular, Helvetica;
+	font: normal 12px/11px GothamProRegular, Helvetica;
 	margin: 0 0 7px 0;	
 }
 
@@ -516,6 +517,10 @@ transform: scale(1.2, 1.2)
     margin: 0 0 20px 0;
 	}
 
+	.news__story > .news__story__footer > .infoblock__subtitle::after {
+    left: 82px;
+	}
+
 	.news__story__title {
 		margin: 0 0 8px 0;
 	}
@@ -565,7 +570,7 @@ transform: scale(1.2, 1.2)
     height: 17px;
  	 	cursor: pointer;
   	z-index: 2;
-}
+	}
 
 	.menu__btn > span,
 	.menu__btn > span::after {
@@ -788,9 +793,13 @@ transform: scale(1.2, 1.2)
     margin: 0 0 39px 0;
   }
 
+	.news__story__footer {
+    align-items: center;
+	}
+
   .news__story_data {
   	color: #fff;
-    font: normal 15px/19px GothamProRegular, Helvetica;
+    font: bold 15px/14.36px GothamProBold, Helvetica;
 	}
 
 	.news__story > .news__story__footer > .infoblock__subtitle::after {
@@ -1038,7 +1047,6 @@ transform: scale(1.2, 1.2)
 
 	.news__story__footer {
     margin-bottom: 55px;
-    align-items: center;
 	}
 
 	.hashtag {
@@ -1189,9 +1197,27 @@ transform: scale(1.2, 1.2)
 
 	.infoblock {
     background-image: url(image/man-planshet.png);
-    height: 150px;
     padding-left: 20px;
     margin-bottom: 38px;
-}
+    background-size: 100% 100%;
+	}
+
+	.article {
+    width: 88%;
+	}
+
+	.infoblock__video {
+    width: 88.5%;
+  }
+
+  .news__story {
+    width: 87%;
+  }
+
+  .hashtag {
+    padding-right: 24px;
+	}
+
+
 
 }
