@@ -883,21 +883,49 @@ transform: scale(1.2, 1.2)
 }
 
 @media(max-width: 610px) {
+	.infoblock {
+		background-size: 100% 100%;
+		height: 260px;
+	}
 
-.infoblock {
-background-size: 100% 100%;
-height: auto;
-}
-
-.infoblock__title {
+	.infoblock__title {
     font: bold 30px/32px GothamProBold, Helvetica;
     margin-bottom: 14px;
     padding: 66px 0 0 0;
-}
+	}
 
-.infoblock__subtitle {
+	.infoblock__subtitle {
     font: bold 15px/19px GothamProBold, Helvetica;
-}
+	}
+
+	.product__boots {
+    width: 90%;
+    height: auto;
+   }
+
+	.footer__menu:first-child, .footer__menu:nth-child(2), .footer__menu:nth-child(3), .product:first-child {
+		margin-right: 4%;
+	}
+
+	.footer__menu:last-child {
+    width: 109px;
+	}
+	.contacts-btn {
+    width: 80px;
+	}
+
+	.product__color {
+    width: 10px;
+    height: 10px;
+	}
+
+	.news__story > .news__story__footer > .infoblock__subtitle::after {
+		display: none;
+	}
+
+	.contacts__social-networking__item {
+    margin-right: 4px;
+	}
 }
 
 
@@ -1053,6 +1081,7 @@ height: auto;
 	}
 
 	.news__story > .news__story__footer > .infoblock__subtitle::after {
+    display: block;
     background-image: url(image/Arrow-news375.svg);
 		width: 38.9px;
     height: 9px;
