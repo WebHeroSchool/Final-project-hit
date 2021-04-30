@@ -882,6 +882,25 @@ transform: scale(1.2, 1.2)
 	}
 }
 
+@media(max-width: 610px) {
+
+.infoblock {
+background-size: 100% 100%;
+height: auto;
+}
+
+.infoblock__title {
+    font: bold 30px/32px GothamProBold, Helvetica;
+    margin-bottom: 14px;
+    padding: 66px 0 0 0;
+}
+
+.infoblock__subtitle {
+    font: bold 15px/19px GothamProBold, Helvetica;
+}
+}
+
+
 @media(max-width: 376px) {
 
 	.header {
