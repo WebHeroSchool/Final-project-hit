@@ -802,6 +802,10 @@ transform: scale(1.2, 1.2)
     font: bold 15px/14.36px GothamProBold, Helvetica;
 	}
 
+	.news__story:first-child > .news__story__footer > .news__story_data {
+    margin-right: -17px;
+	}
+
 	.news__story > .news__story__footer > .infoblock__subtitle::after {
 		background-image: url(image/Arrow-planshet.svg);
     width: 47px;
@@ -818,13 +822,13 @@ transform: scale(1.2, 1.2)
 		background-color: #000;
 		margin-bottom: 0;
 		font: bold 28px/30px GothamProBold, Helvetica;
-		padding: 36px 45px 14px 0;
+		padding: 36px 45px 13px 0;
     letter-spacing: 1.3px;
 	}
 
 	.photo-collage {
 		background: linear-gradient(2.6deg, rgba(255,255,255,1) 61%, rgba(0,0,0,1) 62%);
-		margin-bottom: 123px;
+		margin-bottom: 124px;
 	}
 
 	.photo-collage__photo {
@@ -1095,6 +1099,10 @@ transform: scale(1.2, 1.2)
 
 	.news__story__footer {
     margin-bottom: 55px;
+	}
+
+		.news__story:first-child > .news__story__footer > .news__story_data {
+    margin-right: 0;
 	}
 
 	.hashtag {
